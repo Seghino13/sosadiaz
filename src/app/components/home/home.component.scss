@@ -1,0 +1,93 @@
+@import "../../../styles/main";
+
+.hidde_picker{
+    border:0;
+    position: absolute;
+    margin-left: -123px;
+    margin-top: -20px;
+    z-index: -1;
+
+}
+
+.mat-mdc-button:not(:disabled), .mat-mdc-raised-button:not(:disabled) {
+    color: $color-lead-ore;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 6px;
+}
+
+.button-chart:hover{
+    background-color: #fff;
+}
+
+.material-icons{
+    font-size: 18px;
+}
+
+
+.columns{
+    display: flex;
+    &_chart{
+        flex: 1;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+   
+    }
+}
+
+.chart_items{
+    list-style: none;
+    padding: 0px;
+   
+    &_list{
+        display: flex;
+        &_button{
+            &--green{
+                background-color: $color-tree-palm;
+                height: 20px;
+                width: 30px;
+                border-radius: 5px;
+                margin-right: 5px;
+            }
+            &--blue{
+                background-color:$color-underground-stream;
+                height: 20px;
+                width: 30px;
+                border-radius: 5px;
+                margin-right: 5px; 
+            }
+            &--white{
+                background-color:$color-white;
+                height: 20px;
+                width: 30px;
+                border-radius: 5px;
+                margin-right: 5px; 
+            }
+        }
+    }
+}
+
+.group-info{
+    position: relative;
+    &__info{
+        position: absolute;
+        left: 20px;
+        margin-top: 0px;
+        font-size: 24px;
+    }
+    &__doctor{
+        position: absolute;
+        right: 20px;
+        margin-top: -8px;
+        background-color: #BBCFE0;
+        font-size: 30px;
+        padding: 8px 0px 0px 7px;
+        border-radius: 7px;
+        
+    }
+}
+
+.example-button-row{
+    margin-top: 30px;
+}

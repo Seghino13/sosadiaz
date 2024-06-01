@@ -1,0 +1,10 @@
+<div class="container-canva">
+    <canvas 
+    baseChart 
+    [data]="doughnutChartData" 
+    [type]="doughnutChartType" style="height: 70px;" (chartClick)="chartClicked($event)">
+</canvas>
+<p class="container-canva__data">{{dataSelected}}</p>
+</div>
+
+

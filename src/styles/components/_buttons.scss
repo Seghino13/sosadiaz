@@ -1,0 +1,52 @@
+.button{
+    padding: 6px 7px;
+    margin: 1px;
+   
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;    
+}
+
+.btn-primary{
+    border-radius: 15px;
+    color: $color-lead-ore;
+    background-color: $color-white;
+    border: 0;
+    &:hover{
+ 
+        box-shadow: 0px 0px 5px $color-sea-salt-sherber;
+        color: $color-tree-palm;
+    }
+}
+
+.btn-secondary{
+    border-radius: 9px;
+    color: $color-lead-ore;
+    background-color: $color-white;
+    border: 1px solid $color-sea-salt-sherber;
+    display: inline-flex; 
+    
+
+    &:hover{
+        box-shadow: 0px 0px 5px $color-sea-salt-sherber;
+        color: $color-tree-palm;
+    }
+}
+
+.group-buttons{
+    display: inline-flex; 
+    align-items: center;
+}
+
+.btn-download{
+    background-color: $color-tree-palm;
+    width: 100%;
+    color: $color-white;
+    font-size: 16px;
+    border: 0;
+    padding: 8px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}

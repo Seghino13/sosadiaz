@@ -1,0 +1,10 @@
+
+<div class="search">
+    <input [formControl]="searchControl" placeholder="Search users..." class="search__input">
+    <ul class="search__list">
+      <li *ngFor="let user of users$ | async" class="search__list__item">
+        <img [src]="user.avatar_url" alt="{{ user.login }}" class="search__list__item--avatar">
+        {{ user.login }}
+      </li>
+    </ul>
+</div>

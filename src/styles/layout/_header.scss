@@ -1,0 +1,15 @@
+.mat-toolbar {
+  background-color: $color-underground-stream !important;
+  color: $color-white !important;
+}
+
+.toolbar {
+  &_title {
+    font-size: 0.8em;
+  }
+  &_button {
+    &--icon {
+      color: $color-purple-spire;
+    }
+  }
+}

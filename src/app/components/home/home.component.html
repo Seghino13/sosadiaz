@@ -1,0 +1,88 @@
+
+
+<div class="home">
+    <div class="container">
+        <app-card-welcome [name]="name"></app-card-welcome>
+        <div class="container_spacer"></div>
+        <p class="container_subtitle">Select period to show your progress.</p>
+    
+        <div class="group-buttons">
+            <button class="button btn-primary">Day</button>
+            <button class="button btn-primary">Week</button>
+            <button class="button btn-primary">Month</button>
+            <button class="button btn-primary">Year</button>
+    
+            <button class="button btn-secondary" (click)="picker.open()">
+                <span class="material-icons">
+                    calendar_month
+                    </span>
+                Choose Date</button>
+            <input matInput [matDatepicker]="picker" class="hidde_picker" >
+            <mat-datepicker #picker></mat-datepicker>
+        </div>
+        <app-chart-line></app-chart-line>
+       
+    
+    </div>
+    
+    <div class="container">
+    
+        <p class="container_subtitle">Lorem ipsun chart.</p>
+        <div class="container_spacer"></div>
+    
+        <div class="card">
+            <div class="columns">
+                <div class="columns_chart">
+                    <app-chart-doughnut></app-chart-doughnut>
+                </div>
+                <div class="columns_chart">
+                    <div class="container">
+                        <p class="container_subtitle">Lorem Chart</p>
+    
+    
+                        <ul class="chart_items">
+                            <li class="chart_items_list"> 
+                                <div class="chart_items_list_button--green"></div> Lorem
+                            </li>
+                            <li class="chart_items_list"> 
+                                <div class="chart_items_list_button--blue"></div> Lorem
+                            </li>
+                            <li class="chart_items_list"> 
+                                <div class="chart_items_list_button--white"></div> Lorem
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+    
+    </div>
+
+    <div class="group-info">
+        <div class="group-info__info">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="info"></mat-icon>
+        </div>
+        <div class="group-info__doctor">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="medication"></mat-icon>
+        </div>
+    </div>
+
+    <div class="example-button-row container">
+        <button  class="btn-download">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="download"></mat-icon>
+                Download stats</button>    
+    </div>
+
+</div>
+
+    
+    
+
+
+    
+
+
+
+

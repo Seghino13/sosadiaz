@@ -1,0 +1,15 @@
+<div class="container">
+    <p class="container_subtitle">Lorem ipsun</p>
+
+        <canvas
+            baseChart
+            [data]="barChartData"
+            [options]="barChartOptions"
+            [type]="barChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"
+        >
+        </canvas>
+    
+</div>
+    

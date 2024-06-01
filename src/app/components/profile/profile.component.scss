@@ -1,0 +1,48 @@
+@import "../../../styles/main";
+
+.avatar{
+    width: 35px;
+}
+
+
+ .search{
+    padding: 20px;
+    &__input{
+        width: 95%;
+        color: $color-lead-ore ;
+        font-size: 14px;
+        padding: 8px;
+        border:1px solid $color-lead-ore;
+        &::placeholder{
+            color: $color-lead-ore ; 
+        }
+        &:focus{
+            border:1px solid $color-purple-spire;
+        }
+    }
+    &__list{
+      
+     
+      margin-left: -35px;
+      
+        &__item{
+       
+            padding: 4px;
+            display: flex;
+            color: $color-lead-ore;
+            list-style-type: none;
+            border-bottom: 1px solid #eee;
+            &:nth-child(odd) {
+                background-color: #fdfdfd;
+            }
+            &:nth-child(even) {
+                background-color: #e8e8e8;
+            }
+            &--avatar{
+                width: 35px;
+                margin-right: 10px;
+                border-radius: 50%;
+            }
+        }
+    }
+ }

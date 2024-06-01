@@ -1,0 +1,59 @@
+@import './abstracts/abstracts';
+@import './components/components';
+
+//LAYOUTS
+@import './layout/header';
+@import './layout/card';
+@import './layout/footer';
+
+@import './pages/home';
+
+
+.container {
+  padding: 15px;
+  &_title {
+    color: $color-the-end;
+    font-weight: 500 !important;
+    margin: 0px !important;
+    font-size: 35px !important;
+  }
+  &_date {
+    color: $color-brushed-metal;
+    margin: 0px 2px !important;
+  }
+  &_spacer{
+    height: 10px;
+  }
+  &_subtitle{
+    font-size: 13px;
+    font-weight: 700;
+  }
+  &_center{
+    text-align: center;
+  }
+}
+
+.center{
+  text-align: center;
+  padding: 0px;
+  position: relative;
+}
+
+.online{
+  width: 100%;
+  background-color: $color-tree-palm;
+  color:  $color-white;
+  padding: 8px;
+  text-align: center;
+  position: fixed;
+  top: 0px;
+}
+.offline{
+  width: 100%;
+  background-color: $color-offline;
+  color: $color-white;
+  padding: 8px;
+  text-align: center;
+  position: fixed;
+  top: 0px;
+}

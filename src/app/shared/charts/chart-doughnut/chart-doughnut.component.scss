@@ -1,0 +1,11 @@
+.container-canva{
+    position: relative;
+    &__data{
+        position: absolute;
+        font-size: 15px;
+        top: 45%;
+        z-index: 9;
+        left: 41%;
+        text-align: center;
+    }
+}
